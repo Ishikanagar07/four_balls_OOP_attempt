@@ -8,12 +8,9 @@ class Ball{
     yPos = tempYPos;
     xSpeed = tempXSpeed;
   }
-  
-  void display() {
-    ellipse(xPos,yPos,10,10);
-  }
-  
+   
   void move(){
+    ellipse(xPos,yPos,10,10);
     xPos += xSpeed;
   }
 }
@@ -33,11 +30,7 @@ void setup() {
 
 void draw() {
   ball1.move();
-  ball1.display();
   ball2.move();
-  ball2.display();
   ball3.move();
-  ball3.display();
   ball4.move();
-  ball4.display();
 }
